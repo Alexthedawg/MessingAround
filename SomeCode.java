@@ -4,12 +4,11 @@ public class Something extends Object {
 
     // some fields.
     private Object[] objects;
-    private int numObjects;
+    private int numObjects = 0;
 
     // come constructor
     public Something(int maxObjects) {
         objects = new Object[maxObjects];
-        numObjects = 0;
     }
 
     //some getter setters
