@@ -1,3 +1,5 @@
+import java.time.chrono.ThaiBuddhistChronology;
+
 public class Something extends Object {
 
     private Object[] objects;
@@ -55,5 +57,18 @@ public class Something extends Object {
         }
         if (numObjects >= objects.length - 1)
             return false;
+    }
+
+    /**
+     * A method to replace an Object at a specified index with another Object.
+     * @param objectIndex the index of the Object to be replaced.
+     * @param o the Object to replace the previous Object.
+     * @return the Object that was replaced.
+     */
+    public Object replaceObject(int objectIndex, Object o) {
+        if(objectIndex > numObjects - 1) throw NullPointerException;
+        Object save = objects[objectIndex];
+        objects[objectIndex] = o;
+        return save;
     }
 }
