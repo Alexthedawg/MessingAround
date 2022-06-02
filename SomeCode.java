@@ -2,19 +2,28 @@ import java.time.chrono.ThaiBuddhistChronology;
 
 public class Something extends Object {
 
+    // some fields.
     private Object[] objects;
     private int numObjects;
 
+    // come constructor
     public Something(int maxObjects) {
         objects = new Object[maxObjects];
         numObjects = 0;
     }
 
-    
-     protected int getNumObjects() {return numObjects;}
-     protected void setNumObjects(int numObjects) {this.numObjects = numObjects;}
-     protected Object[] getObjects() {return objects;}
-    
+    //some getter setters
+    protected int getNumObjects() {
+        return numObjects;
+    }
+
+    protected void setNumObjects(int numObjects) {
+        this.numObjects = numObjects;
+    }
+
+    protected Object[] getObjects() {
+        return objects;
+    }
 
     /**
      * Adds an object to the Something if there is enough space.
