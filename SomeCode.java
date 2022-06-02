@@ -8,11 +8,11 @@ public class Something extends Object {
         numObjects = 0;
     }
 
-    /*
-     * protected int getNumObjects() {return numObjects;}
-     * protected void setNumObjects(int numObjects) {this.numObjects = numObjects;}
-     * protected Object[] getObjects() {return objects;}
-     */
+    
+     protected int getNumObjects() {return numObjects;}
+     protected void setNumObjects(int numObjects) {this.numObjects = numObjects;}
+     protected Object[] getObjects() {return objects;}
+    
 
     /**
      * Adds an object to the Something if there is enough space.
